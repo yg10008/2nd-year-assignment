@@ -1,0 +1,111 @@
+#html_file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="quiz-container">
+    <h1>Interactive Quiz</h1>
+    <div id="quiz"></div>
+    <button id="submit">Submit</button>
+    <div class="result" id="result"></div>
+</div>
+
+
+<script src="quiz.js"></script>
+</body>
+</html>
+
+
+
+
+
+#js_file
+
+const questions = [
+    {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Lisbon"],
+        answer: 2 // index of the correct answer
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Earth", "Mars", "Jupiter", "Saturn"],
+        answer: 1
+    },
+    {
+        question: "What is the largest mammal in the world?",
+        options: ["Elephant", "Blue Whale", "Great White Shark", "Giraffe"],
+        answer: 1
+    }
+];
+
+
+function loadQuiz() {
+    const quizContainer = document.getElementById("quiz");
+    questions.forEach((q, index) => {
+        const questionElement = document.createElement("div");
+        questionElement.classList.add("question");
+        questionElement.innerHTML = `
+            <p>${index + 1}. ${q.question}</p>
+            ${q.options.map((option, i) => `
+                <label>
+                    <input type="radio" name="question${index}" value="${i}">
+                    ${option}
+                </label><br>
+            `).join('')}
+        `;
+        quizContainer.appendChild(questionElement);
+    });
+}
+
+
+function checkAnswers() {
+    let score = 0;
+    questions.forEach((q, index) => {
+        const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+        if (selectedOption && parseInt(selectedOption.value) === q.answer) {
+            score++;
+        }
+    });
+    displayResult(score);
+}
+
+
+function displayResult(score) {
+    const resultElement = document.getElementById("result");
+    resultElement.textContent = `You scored ${score} out of ${questions.length}`;
+}
+
+
+document.getElementById("submit").addEventListener("click", checkAnswers);
+
+
+// Load the quiz when the page is loaded
+window.onload = loadQuiz;

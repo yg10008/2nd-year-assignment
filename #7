@@ -1,0 +1,205 @@
+#html_file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p7.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div style="flex-grow: 1;"><img src="p7.jpg" alt="icon" width="150px" height="150px"><br>
+        <div><a href="#">HOME   </a></div>
+        <div><a href="#">ABOUT ME</a></div>
+        <div><a href="#">MY WORK</a></div>
+        <div><a href="#">CONTACT US</a></div>
+        </div>
+        <div style="flex-grow: 5;" >
+            <h3>WLCOME TO BLACKEYES' STUDIO</h3>
+            <h5 >Be calm , be natural <br> because prakruti is our mother <br> see nature , be nature <br>be either nothing or everything. <br>
+                there is no other midway! <br>
+                if there!! <br>
+                then you are unstable; <br>
+                be nothing means no positivity and no negativity, <br>
+                or <br>
+                be everthing means have a positivity and same extent have a negativity. <br>
+        </h5>
+            <h3>BLACK EYE'S HUNTED ONES</h3>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p71.jpeg">
+                    <div class="grid-item"><img src="p71.jpeg"  alt="1" height="300px" width="300px"></div>
+                  </a>
+                  <div class="desc">NATURAL BEAUTY</div>
+                </div>
+              </div>
+
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p72.jpeg">
+                    <div class="grid-item"><img src="p72.jpeg"  alt="2" height="300px" width="300px"></div>
+                  </a>
+                  <div class="desc">NATURAL BEAUTY</div>
+                </div>
+              </div>
+
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p74.jpeg">
+                    <div class="grid-item"><img src="p74.jpeg"  alt="3" height="300px" width="300px"></div>
+                  </a>
+                  <div class="desc">NATURAL BEAUTY</div>
+                </div>
+              </div>
+
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p76.jpeg">
+                    <div class="grid-item"><img src="p76.jpeg"  alt="4" height="300px" width="300px"></div>
+                  </a>
+                  <div class="desc">NATURAL DISASTER</div>
+                </div>
+              </div>
+
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p77.jpeg">
+                    <div class="grid-item"><img src="p77.jpeg"  alt="5" height="300px" width="300px"></div>
+                  </a>
+                  <div class="desc">NATURAL DISASTER</div>
+                </div>
+              </div>
+
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p78.jpeg">
+                    <div class="grid-item"><img src="p78.jpeg"  alt="6" height="300px" width="300px"></div>
+                  </a>
+                  <div class="desc">NATURAL DISASTER</div>
+                </div>
+              </div>
+
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p73.jpeg">
+                    <div class="grid-item"><img src="p73.jpeg"  alt="7" height="300px" width="300px"></div>>
+                  </a>
+                  <div class="desc">NATUROUS BIRD</div>
+                </div>
+              </div>
+
+
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="p79.jpg">
+                    <div class="grid-item"><img src="p79.jpg"   alt="8" height="300px" width="300px"></div>
+                  </a>
+                  <div class="desc">NATUROUS BIRD TOO</div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+#css_file
+
+
+
+.flex-container
+{
+    display: flex;
+    height: 2000px;
+    justify-content: stretch;
+    flex-wrap:row wrap ;
+    background-color: rgb(57, 47, 33);
+}
+
+
+.flex-container>div
+{
+    text-align: center;
+    width: 100px;
+    margin: 10px;
+    padding: 50px;
+    font-size: 30px;
+    background-color: rgb(195, 197, 124);
+}
+.in-box
+{
+    border: 3px solid #0b253f;
+    border-radius: 5px;
+    padding: 50px;
+    width: 300px;
+}
+
+
+div.gallery {
+  border: 1px solid #2d0554;
+}
+
+
+div.gallery:hover {
+  border: 1px solid #020223;
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.responsive {
+  padding:  6px;
+  float: left;
+  width: 24.99999%;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+

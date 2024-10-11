@@ -1,0 +1,96 @@
+#html_file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animation Page</title>
+    <link rel="stylesheet" href="css.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <button class="hover-button">Hover Me!</button>
+    <div class="moving-box"></div>
+    <div class="complex-animation"></div>
+
+</body>
+</html>
+
+
+#css_file
+
+
+/* Button with Hover Effect */
+.hover-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.hover-button:hover {
+    background-color: #2ecc71; /* New color on hover */
+}
+
+/* Animate an Element to Move Across the Screen */
+.moving-box {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 100px;
+    animation: move 5s linear infinite; /* Animation applied to the box */
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%; /* Moves across the screen */
+    }
+}
+
+/* Complex Animation Sequence with Keyframes */
+.complex-animation {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    position: relative;
+    animation: complexMove 6s ease-in-out infinite;
+}
+
+@keyframes complexMove {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: #9b59b6;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+        background-color: #3498db;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        background-color: #e74c3c;
+
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        background-color: #2ecc71;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: #9b59b6;
+    }
+}
+

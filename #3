@@ -1,0 +1,105 @@
+#html_file
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="ps3.css">
+</head>
+<body>
+    <header>
+        <h1>The Natural Bull's Eye</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Sustainable Tourism</a></li>
+            <li><a href="#">High Budght Tours</a></li>
+            <li><a href="#">Zero LvL Budget Tours</a></li>
+        </ul>
+    </nav>
+    <section class="blog-post">
+        <h2>Yugm's all time favourite destination_</h2>
+        <h5>Nanda Devi, one of the most iconic mountains in Uttarakhand_ _</h5>
+        <p>
+
+
+            Nanda Devi, located in the Garhwal Himalayas, is the 23rd highest mountain in the world and the highest peak in Uttarakhand. 
+            Standing tall at 7,816 meters above sea level, this mountain is a trekkers' paradise and a sacred pilgrimage site for Hindus.
+             The Nanda Devi National Park, 
+            surrounding the peak, is home to a variety of flora and fauna, including rare species like the Himalayan brown bear and the snow leopard. 
+            The trek to the base camp of Nanda Devi is a challenging but breathtaking journey,
+             offering stunning views of the surrounding peaks and glaciers.</p>
+             <img src="ps2.jpg" width=auto height=auto>
+             <img src="ps4.jpg" width=auto height=auto>
+             <img src="ps5.jpg" width=auto height=auto>
+    <section class="blog-post">
+        <h2>A Weekend in the City</h2>
+        <p>
+            Uttarakhand <br>
+            a best palce to find peace <br>
+            with a cup of tea with deep freely intesity !
+            <img src="p4.avif" width=auto height=auto>
+            <img src="p5.avif" width=auto height=auto>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Yg's Travel Blog</p>
+    </footer>
+</body>
+</html>
+
+
+#css_file
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #293929;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+nav {
+    
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    color: #293929;
+    display: inline;
+    margin: 0 10px;
+}
+
+
+.blog-post {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}

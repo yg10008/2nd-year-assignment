@@ -1,0 +1,59 @@
+#html_file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p8.css">
+</head>
+<body>
+    <h2>WELCOME TO INDIAN PROSEPERITY</h2>
+    <H5>STREAM BY YG</H5>
+    <div class="grid-container">
+        <div class="grid-item"><img src="download (1).jfif" alt="1"></div>
+        <div class="grid-item"><img src="download (2).jfif" alt="2"></div>
+        <div class="grid-item"><img src="download (3).jfif" alt="3"></div>  
+        <div class="grid-item"><img src="download (4).jfif" alt="4"></div>
+        <div class="grid-item"><img src="download (5).jfif" alt="5"></div>
+        <div class="grid-item"><img src="download (6).jfif" alt="6"></div>  
+        <div class="grid-item"><img src="images (1).jfif" alt="8"></div>
+        <div class="grid-item"><img src="images (2).jpg" alt="9"></div> 
+        <div class="grid-item"><img src="images (3).jfif" alt="10"></div>
+        <div class="grid-item"><img src="images (4).jfif" alt="11"></div>
+        <div class="grid-item"><img src="images (5).jfif" alt="12"></div>
+        <div class="grid-item"><img src="images (6).jfif" alt="13"></div> 
+        <div class="grid-item"><img src="images (7).jfif" alt="14"></div>
+        <div class="grid-item"><img src="p98.jfif" alt="14"></div>
+        <div class="grid-item"><img src="images.jfif" alt="14"></div>
+      </div>
+</body>
+</html>
+
+
+#css_file
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #833426;
+    padding: 20px;
+  }
+  .grid-item {
+    background-color: rgba(86, 12, 12, 0.8);
+    border: 3px solid rgba(106, 82, 1, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .h2
+  {
+    text-align: center;
+  }
+  .H5
+  {
+    text-align: center;
+  }

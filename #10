@@ -1,0 +1,65 @@
+#html_file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="parx.css">
+</head>
+<body>
+    <div class="parallax"></div>
+
+
+<div style="height:1000px;background-color:rgb(115, 80, 8);font-size:36px">
+BHARAT RASHTRA
+</div>
+<div class="parallax"></div>
+<div class="parallax2"></div>
+
+
+<div style="height:1000px;background-color:rgb(115, 80, 8);font-size:36px">
+BHARAT RASHTRA
+</div>
+<div class="parallax2"></div>
+</body>
+</html>
+
+
+#css_file
+
+
+.parallax {
+
+
+    background-image: url('download (1).jfif');
+  
+
+
+    height: 80vh; 
+  
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax2 {
+
+
+    background-image: url('download.jfif');
+  
+
+
+    height: 80vh; 
+  
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

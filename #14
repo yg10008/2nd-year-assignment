@@ -1,0 +1,111 @@
+#html_file
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="pr14.css">
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <span id="nameError" class="error"></span><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <span id="emailError" class="error"></span><br>
+
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <span id="passwordError" class="error"></span><br>
+
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+        <span id="confirmPasswordError" class="error"></span><br>
+
+
+        <input type="submit" value="Register">
+    </form>
+
+
+    <script src="pr14.js"></script>
+</body>
+</html>
+
+
+#css_file
+
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.valid {
+    color: green;
+    font-size: 0.9em;
+}
+
+
+
+#js_file
+
+function validateForm() {
+    // Clear previous error messages
+    document.getElementById('nameError').innerText = '';
+    document.getElementById('emailError').innerText = '';
+    document.getElementById('passwordError').innerText = '';
+    document.getElementById('confirmPasswordError').innerText = '';
+
+
+    let isValid = true;
+
+
+    // Validate Name
+    const name = document.getElementById('name').value;
+    if (name.length < 2) {
+        document.getElementById('nameError').innerText = 'Name must be at least 2 characters long.';
+        isValid = false;
+    }
+
+
+    // Validate Email
+    const email = document.getElementById('email').value;
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        document.getElementById('emailError').innerText = 'Please enter a valid email address.';
+        isValid = false;
+    }
+
+
+    // Validate Password
+    const password = document.getElementById('password').value;
+    if (password.length < 6) {
+        document.getElementById('passwordError').innerText = 'Password must be at least 6 characters long.';
+        isValid = false;
+    } else if (!/[A-Z]/.test(password) || !/[0-9]/.test(password)) {
+        document.getElementById('passwordError').innerText = 'Password must contain at least one uppercase letter and one number.';
+        isValid = false;
+    }
+
+
+    // Validate Confirm Password
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    if (password !== confirmPassword) {
+        document.getElementById('confirmPasswordError').innerText = 'Passwords do not match.';
+        isValid = false;
+    }
+
+
+    return isValid;
+}
+
+

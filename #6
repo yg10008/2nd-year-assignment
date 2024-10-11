@@ -1,0 +1,83 @@
+#html_file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p6.css">
+</head>
+<body>
+    <h1 class="hed">CSS BOX MODEL</h1>
+    <div class="c">
+        <p>
+        MARGIN
+        </p>
+        <div class="b">
+            <p>
+            BORDER
+            </p>
+            <div class="a">
+                <p>
+                PADDING
+                </p>
+                <div class="i">
+                    <p>
+                    CONTENT
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+#css_file
+
+
+body{
+    background-color: rgb(109, 93, 125);
+}
+.hed
+{
+    text-align: center;
+}
+.a{
+    text-align: center;
+    background-color: rgb(0, 32, 72);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    margin-right: 5%;
+}
+.b{
+    text-align: center;
+    background-color:rgb(133, 133, 229);
+    padding: 10px;
+    margin-left: 7%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 7%;
+}
+.c{
+    text-align: center;
+    background-color: rgb(53, 50, 106);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.i{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: rgb(255, 128, 0);
+    text-align: center;
+}

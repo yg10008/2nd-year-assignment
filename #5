@@ -1,0 +1,77 @@
+#html_file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pr5.css">
+</head>
+<body class="body">
+    <header class="hc"><h2><b>PROFILE PAGE</b></h2></header>
+    <P>HELLO , MY NAME IS YUGM.<BR>I'M DONE MY HIGHER SECONDARY STUDIES AT PALANPUR,BANASKANTHA(PINCODE_385001)<BR>
+        NOW I'M STUDY AT CHANGA,NADIAD(PINDCODE_387001) <BR>
+            I'M 2  <SUP>ND</SUP>  YEAR B.TECH STUDENT <BR>
+                IT DEPARTMENT
+    </P>
+    
+    
+        <div class="flex-container">
+            <h2><b>my experience_ _</b></h2>
+        </div>
+        <p>
+            A KABBADI PLAYER // WHEN I WAN IN 8 <SUP>TH</SUP> STANDERD I WAS IN SCHOOL KABBADI TEAM! <BR>
+            A KARATE PLAYER // 1 GOLD MEDAL IN FIGHT MATCH AND ONE SILVER MEADAL IN KATAS AT BHARUCH DISTRICT LEVEL MATCH UNDER 12! <BR>
+            1 GOLD MEDAL TALUKA LEVEL HOME MATCH ! I ALSO TRY A DIV DAMDAN INTER STATE MATCH ! A VERY SAD MATCH
+                <BR>
+            ALSO I'M CRICKET PLAYER I OFTEN USED TO PLAY CRICKET BUT SO SAD I NEVR PLAY ANY CRICKET TOURNAMENT AND I'M RIGHT ARM BATTING ALL-ROUNDER!   
+        </p>
+        <div  class="flex-container">
+            <h2><b>my favourite things what i do in my free time !!</b></h2>
+        </div>
+            <P>
+                I OFTEN WRITE MY OWN PHILOSOPHY BASED ON MY EYE EXPERINCE AND  ALSO MY OWN EXPERINCE
+                AND YEAH IT WAS A VERY NICE ARRANGED TEXT WITH PROPER EXPLANATION WHAT I MMEANT TO SAY IS 
+                IT WAS NOT A TIME PASS!!
+                <BR>
+                    I OFTEN USED TO READ VARIOUS BOOKS  
+            </P>
+       
+</body>
+</html>
+
+
+#css_file
+
+
+.hc
+{
+    color: rgb(178, 180, 203);
+    text-align: center;
+    height: 100px;
+    background-color: rgb(50, 47, 66);
+}
+.body
+{
+    background-color: rgb(178, 180, 203);
+}  
+.flex-container
+{
+    background-color: rgb(50, 47, 66);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(178, 180, 203);
+    align-content: space-around;
+}
+.flex-container>div{
+   
+    border: 50px;
+    
+    font-size: 10px;
+}
+.p{
+    color: rgb(50, 47, 66);
+}
